@@ -8,11 +8,13 @@
             int height = maze.GetLength(1);
             for (int i = 0; i < width; i++)
             {
-                maze[i, height - 1].RemoveEveryElement();
+                maze[i, height - 1].WallLeftExists = false;
+                maze[i, height - 1].FloorExists = false;
             }
             for (int i = 0; i < height; i++)
             {
-                maze[width-1, i].RemoveEveryElement();
+                maze[width - 1, i].WallBottomExists = false;
+                maze[width - 1, i].FloorExists = false;
             }
         }
         
