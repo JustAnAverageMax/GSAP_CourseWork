@@ -282,6 +282,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Icon
       objectReference: {fileID: 0}
+    - target: {fileID: 8781920154925458612, guid: 6b70f05bb2ccbc344a150865ae6c4d17,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b70f05bb2ccbc344a150865ae6c4d17, type: 3}
 --- !u!4 &408269887882197121 stripped
@@ -526,6 +531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Icon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781920154925458612, guid: 6b70f05bb2ccbc344a150865ae6c4d17,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b70f05bb2ccbc344a150865ae6c4d17, type: 3}
