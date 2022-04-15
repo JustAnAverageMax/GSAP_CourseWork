@@ -11,13 +11,8 @@ public class CellDataContainer
     public bool WallBottomExists = true;
     public bool FloorExists = true;
     
-    public bool WallRightExists = true;
-    public bool WallUpExists = true;
     
     public bool BLCornerExists = true;
-    public bool BRCornerExists = true;
-    public bool ULCornerExists = true;
-    public bool URCornerExists = true;
     public bool Visited = false;
 
     public CellDataContainer(int x, int y)
@@ -26,17 +21,5 @@ public class CellDataContainer
         this.Y = y;
     }
 
-    public void RemoveEveryElement()
-    {
-        WallLeftExists = false;
-        WallBottomExists = false;
-        FloorExists = false;
-        WallRightExists = false;
-        WallUpExists = false;
-        BLCornerExists = false;
-        BRCornerExists = false;
-        ULCornerExists = false;
-        URCornerExists = false;
-       
-    }
+    
 }

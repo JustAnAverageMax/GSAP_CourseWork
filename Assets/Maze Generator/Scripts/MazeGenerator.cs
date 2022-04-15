@@ -66,12 +66,10 @@ public class MazeGenerator
             if (first.Y > second.Y)
             {
                 first.WallBottomExists = false;
-                second.WallUpExists = false;
             }
             else
             {
                 second.WallBottomExists = false;
-                first.WallUpExists = false;
             }
         }
 
@@ -80,12 +78,10 @@ public class MazeGenerator
             if (first.X > second.X)
             {
                 first.WallLeftExists = false;
-                second.WallRightExists = false;
             }
             else
             {
                 second.WallLeftExists = false;
-                first.WallRightExists = false;
             }
         }
     }
