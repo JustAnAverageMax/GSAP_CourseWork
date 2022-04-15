@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aae638d7-2168-45d8-bed8-4fd72ffce5e1" name="Changes" comment="" />
+    <list default="true" id="07c6b341-c8c6-43d1-a852-2854375450a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Tutorials/AddARoom/13-Spawn-Room.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Tutorials/AddARoom/13-Spawn-Room.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Tutorials/AddEnemyBot/015.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Tutorials/AddEnemyBot/015.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/PlayerExplore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/07c89f7520694139991332d3cf930d4813bc00/ed/223cf87c/SpriteRenderer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="ProjectId" id="27KTFpoeZXXZdRELOyfsmYAvHFf" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27fGcql3ERYOJGJBDxH5EAi5QPC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,6 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -50,15 +58,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aae638d7-2168-45d8-bed8-4fd72ffce5e1" name="Changes" comment="" />
-      <created>1649067678461</created>
+      <changelist id="07c6b341-c8c6-43d1-a852-2854375450a8" name="Changes" comment="" />
+      <created>1649703816641</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1649067678461</updated>
-      <workItem from="1649067691048" duration="2242000" />
-      <workItem from="1649081543751" duration="755000" />
-      <workItem from="1649102271702" duration="511000" />
-      <workItem from="1649163281546" duration="1454000" />
+      <updated>1649703816641</updated>
+      <workItem from="1649703874866" duration="646000" />
+      <workItem from="1649955146356" duration="6716000" />
+      <workItem from="1649967584076" duration="272000" />
     </task>
     <servers />
   </component>
@@ -68,18 +75,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
