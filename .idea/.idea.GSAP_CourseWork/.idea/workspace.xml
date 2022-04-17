@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07c6b341-c8c6-43d1-a852-2854375450a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GSAP_CourseWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GSAP_CourseWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Level/BaseObjects/Wall_4m_Mesh.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Prefabs/Level/BaseObjects/Wall_4m_Mesh.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Tutorials/AddARoom/13-Spawn-Room.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Tutorials/AddARoom/13-Spawn-Room.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Tutorials/AddEnemyBot/015.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Tutorials/AddEnemyBot/015.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene/NavMesh-NavMeshSurface.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene/NavMesh-NavMeshSurface.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene/NavMesh-NavMeshSurface.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene/NavMesh-NavMeshSurface.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/Ch01Behaviours/Agent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/Ch01Behaviours/Agent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/Scripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/Scripts/EnemyAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/Scripts/Fireball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/Scripts/Fireball.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,10 +47,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="8968">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="8968" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -66,6 +69,7 @@
       <workItem from="1649703874866" duration="646000" />
       <workItem from="1649955146356" duration="6716000" />
       <workItem from="1649967584076" duration="272000" />
+      <workItem from="1650104665528" duration="6752000" />
     </task>
     <servers />
   </component>

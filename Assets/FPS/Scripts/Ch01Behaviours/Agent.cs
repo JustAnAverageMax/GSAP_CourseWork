@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -15,11 +16,12 @@ public class Agent : MonoBehaviour
     public float rotation;
     public Vector3 velocity;
     protected Steering steering;
-    [SerializeField] private GameObject player;
+    private GameObject player;
     private Dictionary<int, List<Steering>> groups;
     public bool isEnable = false;
 	void Start ()
     {
+        player = GameObject.FindWithTag("Player");
         velocity = Vector3.zero;
         steering = new Steering();
         groups = new Dictionary<int, List<Steering>>();
