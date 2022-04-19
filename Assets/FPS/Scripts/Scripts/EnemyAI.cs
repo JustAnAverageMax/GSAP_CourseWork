@@ -13,16 +13,15 @@ public class EnemyAI : MonoBehaviour
 
 
     private Collider _collider;
-    
-    [SerializeField]
-    private GameObject[] _fireballsPrefab;
+
+    [SerializeField] private GameObject[] _fireballsPrefab;
     private GameObject _fireball;
     private Agent _agent;
-    
-    
+
 
     private bool hitDetect;
     private RaycastHit hitInfo;
+
     private void Awake()
     {
         _collider = GetComponent<Collider>();
@@ -30,34 +29,37 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
-        _collider = GetComponent<Collider>();
         _alive = true;
         _agent = gameObject.GetComponent<Agent>();
     }
-    private void OnDrawGizmos()
-      {
-          if (hitDetect)
-          {
-              Gizmos.color = Color.red;
-              Gizmos.DrawRay(transform.position, transform.forward * hitInfo.distance);
-              Gizmos.DrawWireCube(transform.position + transform.forward * hitInfo.distance, transform.localScale);
-          }
-          else
-          {
-              Gizmos.color = Color.green;
-              Gizmos.DrawRay(transform.position, transform.forward*_obstacleRange);
-          }
-      }
 
-    
+    private void OnDrawGizmos()
+    {
+        
+        _collider = GetComponent<Collider>();
+        if (hitDetect)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawRay(_collider.bounds.center, transform.forward * hitInfo.distance);
+            Gizmos.DrawWireCube(_collider.bounds.center + transform.forward * hitInfo.distance, _collider.bounds.size);
+        }
+        else
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawRay(_collider.bounds.center, transform.forward * _obstacleRange);
+            Gizmos.DrawWireCube(_collider.bounds.center + transform.forward * _obstacleRange, _collider.bounds.size);
+        }
+    }
+
 
     private void FixedUpdate()
     {
         if (_alive)
         {
             transform.Translate(0, 0, speed * Time.deltaTime);
-            
-            hitDetect = Physics.BoxCast(transform.position, transform.localScale/2, transform.forward, out hitInfo, transform.rotation, _obstacleRange);
+
+            hitDetect = Physics.BoxCast(_collider.bounds.center, _collider.bounds.size/4, transform.forward, out hitInfo,
+                transform.rotation, _obstacleRange);
             if (hitDetect)
             {
                 GameObject hitObject = hitInfo.transform.gameObject;
@@ -68,17 +70,16 @@ public class EnemyAI : MonoBehaviour
                     {
                         int randFireball = Random.Range(0, _fireballsPrefab.Length);
                         _fireball = Instantiate(_fireballsPrefab[randFireball], transform.position, transform.rotation);
-
                     }
                 }
                 else if (hitInfo.distance < _obstacleRange)
                 {
                     _agent.isEnable = false;
-                    float angleRotation = Random.Range(-100, 100);//выбираем угол поворота
-                    transform.Rotate(0, angleRotation, 0);//поворачиваемся
+                    float angleRotation = Random.Range(-100, 100); //выбираем угол поворота
+                    transform.Rotate(0, angleRotation, 0); //поворачиваемся
                 }
             }
-        }        
+        }
     }
 
     public void SetAlive(bool alive)

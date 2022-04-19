@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 7771169476676654521}
   - component: {fileID: 6662907296523524636}
   - component: {fileID: 8904621054529662678}
+  - component: {fileID: 911708603074081699}
+  - component: {fileID: 1610335142254881230}
+  - component: {fileID: -2353293169741966797}
   m_Layer: 0
   m_Name: kosa2
   m_TagString: Untagged
@@ -81,3 +84,50 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &911708603074081699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6959026639403208451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dca9b25b5f8a47418a78e08f836249e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  damage: 1
+--- !u!64 &1610335142254881230
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6959026639403208451}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4825740717989697242, guid: 74de8094fbacac9499a9df4230bdb677, type: 3}
+--- !u!95 &-2353293169741966797
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6959026639403208451}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ae24af855a9ea94478ebea1936a790aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
