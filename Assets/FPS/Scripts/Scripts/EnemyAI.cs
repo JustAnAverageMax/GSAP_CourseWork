@@ -5,55 +5,65 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
-//Базовый искуственный интелект
 public class EnemyAI : MonoBehaviour
 {
-    //Параметры сценария
     public float speed = 5.0f;
-    public float obstacleRande = 5.0f;
+    public float _obstacleRange = 5.0f;
     public bool _alive = true;
 
-    //Снаряды
+
+    private Collider _collider;
+    
     [SerializeField]
     private GameObject[] _fireballsPrefab;
     private GameObject _fireball;
     [SerializeField] private Transform raycastPos;
     private Agent _agent;
-    
+
+
+    private bool hitDetect;
+    private RaycastHit hitInfo;
+    private void Awake()
+    {
+        _collider = GetComponent<Collider>();
+    }
+
     private void Start()
     {
+        _collider = GetComponent<Collider>();
         _alive = true;
         _agent = gameObject.GetComponent<Agent>();
     }
-
     private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Ray ray = new Ray(raycastPos.position, transform.forward);
-        Gizmos.DrawRay(ray);
-    }
+      {
+          if (hitDetect)
+          {
+              Gizmos.color = Color.red;
+              Gizmos.DrawRay(raycastPos.position, transform.forward * hitInfo.distance);
+              Gizmos.DrawWireCube(raycastPos.position + transform.forward * hitInfo.distance, transform.localScale);
+          }
+          else
+          {
+              Gizmos.color = Color.green;
+              Gizmos.DrawRay(raycastPos.position, transform.forward*_obstacleRange);
+          }
+      }
 
-    private void Update()
+    
+
+    private void FixedUpdate()
     {
         if (_alive)
         {
-            //Непрерывное движение вперед
             transform.Translate(0, 0, speed * Time.deltaTime);
-
-            //Луч из объекта вперед
-            Ray ray = new Ray(raycastPos.position, transform.forward);
-            RaycastHit hit;//объект удара
-
-            //Пускаем луч и проверяем 
-            if (Physics.Raycast(ray, out hit))
+            
+            hitDetect = Physics.BoxCast(raycastPos.position, transform.localScale/2, transform.forward, out hitInfo, transform.rotation, _obstacleRange);
+            if (hitDetect)
             {
-                //Получаем объект удара
-                GameObject hitObject = hit.transform.gameObject;
-                //Если объект удара игрок
+                GameObject hitObject = hitInfo.transform.gameObject;
                 if (hitObject.GetComponent<CharacterController>())
                 {
                     _agent.isEnable = true;
-                    //Если огненого шара нет
                     if (_fireball == null)
                     {
                         int randFireball = Random.Range(0, _fireballsPrefab.Length);
@@ -61,11 +71,9 @@ public class EnemyAI : MonoBehaviour
 
                     }
                 }
-                //Проверяем дистанцию до объекта впереди
-                else if (hit.distance < obstacleRande)
+                else if (hitInfo.distance < _obstacleRange)
                 {
                     _agent.isEnable = false;
-                    //Пора действовать
                     float angleRotation = Random.Range(-100, 100);//выбираем угол поворота
                     transform.Rotate(0, angleRotation, 0);//поворачиваемся
                 }
