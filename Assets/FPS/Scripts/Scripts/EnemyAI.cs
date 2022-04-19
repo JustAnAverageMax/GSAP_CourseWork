@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 //Базовый искуственный интелект
 public class EnemyAI : MonoBehaviour
@@ -15,12 +17,20 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private GameObject[] _fireballsPrefab;
     private GameObject _fireball;
-    [SerializeField] private Agent _agent;
-    [SerializeField] private GameObject player;
-    [SerializeField] private double maxDist;
+    [SerializeField] private Transform raycastPos;
+    private Agent _agent;
+    
     private void Start()
     {
         _alive = true;
+        _agent = gameObject.GetComponent<Agent>();
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Ray ray = new Ray(raycastPos.position, transform.forward);
+        Gizmos.DrawRay(ray);
     }
 
     private void Update()
@@ -31,7 +41,7 @@ public class EnemyAI : MonoBehaviour
             transform.Translate(0, 0, speed * Time.deltaTime);
 
             //Луч из объекта вперед
-            Ray ray = new Ray(transform.position, transform.forward);
+            Ray ray = new Ray(raycastPos.position, transform.forward);
             RaycastHit hit;//объект удара
 
             //Пускаем луч и проверяем 
@@ -46,10 +56,9 @@ public class EnemyAI : MonoBehaviour
                     //Если огненого шара нет
                     if (_fireball == null)
                     {
-                        int randFireball = Random.Range(1, _fireballsPrefab.Length);
-                        _fireball = Instantiate(_fireballsPrefab[randFireball]) as GameObject;
-                        _fireball.transform.position = transform.TransformPoint(Vector3.forward * 1.5f);//напривим огненый шар перед врагом
-                        _fireball.transform.rotation = transform.rotation;//в том же направлении
+                        int randFireball = Random.Range(0, _fireballsPrefab.Length);
+                        _fireball = Instantiate(_fireballsPrefab[randFireball], raycastPos.position, transform.rotation);
+
                     }
                 }
                 //Проверяем дистанцию до объекта впереди
