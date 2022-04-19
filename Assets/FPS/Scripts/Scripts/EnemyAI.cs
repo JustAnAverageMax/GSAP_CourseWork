@@ -17,9 +17,9 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private GameObject[] _fireballsPrefab;
     private GameObject _fireball;
-    [SerializeField] private Transform raycastPos;
     private Agent _agent;
-
+    
+    
 
     private bool hitDetect;
     private RaycastHit hitInfo;
@@ -39,13 +39,13 @@ public class EnemyAI : MonoBehaviour
           if (hitDetect)
           {
               Gizmos.color = Color.red;
-              Gizmos.DrawRay(raycastPos.position, transform.forward * hitInfo.distance);
-              Gizmos.DrawWireCube(raycastPos.position + transform.forward * hitInfo.distance, transform.localScale);
+              Gizmos.DrawRay(transform.position, transform.forward * hitInfo.distance);
+              Gizmos.DrawWireCube(transform.position + transform.forward * hitInfo.distance, transform.localScale);
           }
           else
           {
               Gizmos.color = Color.green;
-              Gizmos.DrawRay(raycastPos.position, transform.forward*_obstacleRange);
+              Gizmos.DrawRay(transform.position, transform.forward*_obstacleRange);
           }
       }
 
@@ -57,7 +57,7 @@ public class EnemyAI : MonoBehaviour
         {
             transform.Translate(0, 0, speed * Time.deltaTime);
             
-            hitDetect = Physics.BoxCast(raycastPos.position, transform.localScale/2, transform.forward, out hitInfo, transform.rotation, _obstacleRange);
+            hitDetect = Physics.BoxCast(transform.position, transform.localScale/2, transform.forward, out hitInfo, transform.rotation, _obstacleRange);
             if (hitDetect)
             {
                 GameObject hitObject = hitInfo.transform.gameObject;
@@ -67,7 +67,7 @@ public class EnemyAI : MonoBehaviour
                     if (_fireball == null)
                     {
                         int randFireball = Random.Range(0, _fireballsPrefab.Length);
-                        _fireball = Instantiate(_fireballsPrefab[randFireball], raycastPos.position, transform.rotation);
+                        _fireball = Instantiate(_fireballsPrefab[randFireball], transform.position, transform.rotation);
 
                     }
                 }

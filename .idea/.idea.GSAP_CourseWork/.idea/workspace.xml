@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07c6b341-c8c6-43d1-a852-2854375450a8" name="Changes" comment="" />
+    <list default="true" id="07c6b341-c8c6-43d1-a852-2854375450a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Scythe.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Scythe.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity.orig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity.orig.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/Scripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/Scripts/EnemyAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
