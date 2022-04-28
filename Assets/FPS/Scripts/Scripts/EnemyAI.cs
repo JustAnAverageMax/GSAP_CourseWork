@@ -35,19 +35,27 @@ public class EnemyAI : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        
+        Gizmos.matrix = transform.localToWorldMatrix;
         _collider = GetComponent<Collider>();
+        
+#if UNITY_EDITOR
+
+        hitDetect = Physics.BoxCast(_collider.bounds.center, _collider.bounds.size / 2, transform.forward, out hitInfo,
+            transform.rotation, _obstacleRange);
+#endif
+
         if (hitDetect)
         {
-            Gizmos.color = Color.red;
-            Gizmos.DrawRay(_collider.bounds.center, transform.forward * hitInfo.distance);
-            Gizmos.DrawWireCube(_collider.bounds.center + transform.forward * hitInfo.distance, _collider.bounds.size);
+            //Gizmos.color = Color.red;
+            Gizmos.DrawRay(Vector3.zero, transform.forward * hitInfo.distance);
+            Gizmos.DrawWireCube(transform.forward * hitInfo.distance, _collider.bounds.size);
         }
         else
         {
-            Gizmos.color = Color.green;
-            Gizmos.DrawRay(_collider.bounds.center, transform.forward * _obstacleRange);
-            Gizmos.DrawWireCube(_collider.bounds.center + transform.forward * _obstacleRange, _collider.bounds.size);
+            Gizmos.matrix = transform.localToWorldMatrix;
+           // Gizmos.color = Color.green;
+            Gizmos.DrawRay(Vector3.zero, transform.forward * _obstacleRange);
+            Gizmos.DrawWireCube(transform.forward * _obstacleRange, _collider.bounds.size);
         }
     }
 
@@ -58,7 +66,8 @@ public class EnemyAI : MonoBehaviour
         {
             transform.Translate(0, 0, speed * Time.deltaTime);
 
-            hitDetect = Physics.BoxCast(_collider.bounds.center, _collider.bounds.size/4, transform.forward, out hitInfo,
+            hitDetect = Physics.BoxCast(_collider.bounds.center, _collider.bounds.size / 2, transform.forward,
+                out hitInfo,
                 transform.rotation, _obstacleRange);
             if (hitDetect)
             {
