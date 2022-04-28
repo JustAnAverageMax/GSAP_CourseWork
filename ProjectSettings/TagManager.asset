@@ -3,22 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - MinimapSprite
+  - Lol
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Minimap
+  - 
   - Water
   - UI
-  - 
+  - Weapon
   - 
   - PostProcessing
   - 
   - FirstPersonWeapon
   - PhysicalAmmo
-  - 
-  - 
+  - Enemy
+  - Minimap
   - 
   - 
   - 
