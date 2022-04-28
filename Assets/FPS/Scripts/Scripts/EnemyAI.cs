@@ -46,14 +46,14 @@ public class EnemyAI : MonoBehaviour
 
         if (hitDetect)
         {
-            //Gizmos.color = Color.red;
+            Gizmos.color = Color.red;
             Gizmos.DrawRay(Vector3.zero, transform.forward * hitInfo.distance);
             Gizmos.DrawWireCube(transform.forward * hitInfo.distance, _collider.bounds.size);
         }
         else
         {
             Gizmos.matrix = transform.localToWorldMatrix;
-           // Gizmos.color = Color.green;
+            Gizmos.color = Color.green;
             Gizmos.DrawRay(Vector3.zero, transform.forward * _obstacleRange);
             Gizmos.DrawWireCube(transform.forward * _obstacleRange, _collider.bounds.size);
         }
