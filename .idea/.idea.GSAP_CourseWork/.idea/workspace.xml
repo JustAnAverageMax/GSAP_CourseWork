@@ -3,18 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="07c6b341-c8c6-43d1-a852-2854375450a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GSAP_CourseWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GSAP_CourseWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DetectTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DetectTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Prefabs/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Level/BaseObjects/Wall_4m_Mesh.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Prefabs/Level/BaseObjects/Wall_4m_Mesh.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Scythe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Prefabs/Scythe.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/kosa2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/kosa2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/Scripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/Scripts/EnemyAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maze Generator/Prefabs/Cell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maze Generator/Prefabs/Cell.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +21,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/208f92fc783546f9abbe643bfc23920c762000/9a/e64592a3/PlayModeView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/07c89f7520694139991332d3cf930d4813bc00/8c/629f9976/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/Unity/GSAP_CourseWork/Assets/FPS/Scripts/Scripts/EnemyAI.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,10 +51,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="8504">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="8504" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -88,7 +78,8 @@
       <workItem from="1651131744776" duration="849000" />
       <workItem from="1651134111100" duration="4924000" />
       <workItem from="1651172522591" duration="83000" />
-      <workItem from="1651172627060" duration="9285000" />
+      <workItem from="1651172627060" duration="9601000" />
+      <workItem from="1651227318720" duration="1039000" />
     </task>
     <servers />
   </component>
