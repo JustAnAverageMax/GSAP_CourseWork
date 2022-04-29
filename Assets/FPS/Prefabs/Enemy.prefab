@@ -267,7 +267,7 @@ MonoBehaviour:
   _detectedPlayer: 0
   _layerMask:
     serializedVersion: 2
-    m_Bits: 7543
+    m_Bits: 7479
   _fireballsPrefab:
   - {fileID: 5082055061322557594, guid: ca1fb183c6ff95440ba026b2a82dc8a1, type: 3}
   _firePos: {fileID: 2623215276010776076}

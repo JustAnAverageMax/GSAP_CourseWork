@@ -102,7 +102,6 @@ public class EnemyAI : MonoBehaviour
                 }
                 else if (hitInfo.distance < _obstacleRange && !hitObject.CompareTag("Lol"))
                 {
-                    Debug.Log(hitObject);
                     _detectedPlayer = false;
                     _agent.isEnable = false;
                     _isRotating = true;
