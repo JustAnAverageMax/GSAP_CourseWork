@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="07c6b341-c8c6-43d1-a852-2854375450a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GSAP_CourseWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GSAP_CourseWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BrokenVector/LowPolyDungeon/Prefabs/Clutter/Skull.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BrokenVector/LowPolyDungeon/Prefabs/Clutter/Skull.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Prefabs/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/SimpleLightningBoltPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Prefabs/SimpleLightningBoltPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Maze Generator/Prefabs/Cell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maze Generator/Prefabs/Cell.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +26,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/LookAtCharacter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BrokenVector/LowPolyDungeon/Demo Scenes/ScreenshotMaker.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -84,7 +90,7 @@
       <workItem from="1651172627060" duration="9601000" />
       <workItem from="1651227318720" duration="1039000" />
       <workItem from="1651243551253" duration="2413000" />
-      <workItem from="1651264711689" duration="4392000" />
+      <workItem from="1651264711689" duration="6389000" />
     </task>
     <servers />
   </component>
