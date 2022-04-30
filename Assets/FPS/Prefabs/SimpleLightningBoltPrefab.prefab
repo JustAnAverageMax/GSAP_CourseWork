@@ -210,8 +210,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.743586, y: 3.6948857, z: 0.6228094}
-  m_Center: {x: 0.0063962936, y: -0.057469547, z: 0.1885953}
+  m_Size: {x: 5.6484137, y: 3.5949783, z: 1.1845429}
+  m_Center: {x: -0.33780658, y: -0.0075159073, z: 0.25740528}
 --- !u!82 &297511916023173099
 AudioSource:
   m_ObjectHideFlags: 0
@@ -232,7 +232,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 5.26
+  MinDistance: 4.8413305
   MaxDistance: 9.13
   Pan2D: 0
   rolloffMode: 1
@@ -321,6 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0.3
+  slowCoefficient: 0.4
 --- !u!54 &3386312272389716392
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -352,7 +353,7 @@ PrefabInstance:
     - target: {fileID: 7044302722064281885, guid: 09e0d82f49deedf4e8ef956fe70c3a8e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 1.58
       objectReference: {fileID: 0}
     - target: {fileID: 7044302722064281885, guid: 09e0d82f49deedf4e8ef956fe70c3a8e,
         type: 3}
@@ -438,7 +439,7 @@ PrefabInstance:
     - target: {fileID: 7044302722064281885, guid: 09e0d82f49deedf4e8ef956fe70c3a8e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: -2.53
       objectReference: {fileID: 0}
     - target: {fileID: 7044302722064281885, guid: 09e0d82f49deedf4e8ef956fe70c3a8e,
         type: 3}

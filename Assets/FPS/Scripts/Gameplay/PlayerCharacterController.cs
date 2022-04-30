@@ -96,6 +96,8 @@ namespace Unity.FPS.Gameplay
         [Tooltip("Damage recieved when falling at the maximum speed")]
         public float FallDamageAtMaxSpeed = 50f;
 
+        public float SlowCoefficient { get; set; } 
+
         public UnityAction<bool> OnStanceChanged;
 
         public Vector3 CharacterVelocity { get; set; }
@@ -136,6 +138,7 @@ namespace Unity.FPS.Gameplay
 
         void Start()
         {
+            SlowCoefficient = 1f;
             // fetch components on the same gameObject
             m_Controller = GetComponent<CharacterController>();
             DebugUtility.HandleErrorIfNullGetComponent<CharacterController, PlayerCharacterController>(m_Controller,
@@ -290,7 +293,7 @@ namespace Unity.FPS.Gameplay
                 if (IsGrounded)
                 {
                     // calculate the desired velocity from inputs, max speed, and current slope
-                    Vector3 targetVelocity = worldspaceMoveInput * MaxSpeedOnGround * speedModifier;
+                    Vector3 targetVelocity = worldspaceMoveInput * MaxSpeedOnGround * speedModifier * SlowCoefficient;
                     // reduce speed if crouching by crouch speed ratio
                     if (IsCrouching)
                         targetVelocity *= MaxSpeedCrouchedRatio;
@@ -398,6 +401,7 @@ namespace Unity.FPS.Gameplay
             return Vector3.Cross(slopeNormal, directionRight).normalized;
         }
 
+        
         void UpdateCharacterHeight(bool force)
         {
             // Update height instantly

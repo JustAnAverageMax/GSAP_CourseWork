@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07c6b341-c8c6-43d1-a852-2854375450a8" name="Changes" comment="" />
+    <list default="true" id="07c6b341-c8c6-43d1-a852-2854375450a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GSAP_CourseWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GSAP_CourseWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DamagePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DamagePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/SimpleLightningBoltPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Prefabs/SimpleLightningBoltPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/Gameplay/PlayerCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/Gameplay/PlayerCharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +19,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BrokenVector/LowPolyDungeon/Demo Scenes/ScreenshotMaker.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,6 +80,7 @@
       <workItem from="1651172627060" duration="9601000" />
       <workItem from="1651227318720" duration="1039000" />
       <workItem from="1651243551253" duration="2413000" />
+      <workItem from="1651264711689" duration="2938000" />
     </task>
     <servers />
   </component>
@@ -91,6 +100,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
